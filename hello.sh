@@ -23,9 +23,31 @@
 #                                    \|___|                   \/____/                                           \/____/                  \/____/                  \/____/         
 #                                                                                                                                                                                 
 
+for i in {1..10}; do
+    sleep 0.1
+    clear
+    echo Loading $(( i * 10 )) %
+done
+
 greeting="Welcome"
 user=$(whoami)
 day=$(date +%A)
 
+clear
+echo " "
+echo " "
+echo "     _____                                "
+echo "   |  __ \                                "
+echo "   | |__) | __ __ ___   _____  ___ _ __   "
+echo "   |  ___/ '__/ _  \ \ / / _ \/ _ \ '_ \  "
+echo "   | |   | | | (_| |\ V /  __/  __/ | | | "
+echo "   |_|   |_|  \__,_| \_/ \___|\___|_| |_| "
+echo " "
+echo " "
+sleep 1
+                                       
+
 echo "$greeting back $user! Today is $day, which is the best day of the entire week!"
+sleep 1
 echo "Your Bash shell version is: $BASH_VERSION. Enjoy!"
+sleep 1
